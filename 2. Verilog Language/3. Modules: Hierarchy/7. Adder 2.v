@@ -16,3 +16,11 @@ module top_module(
     
 
 endmodule
+
+
+module add1 ( input a, input b, input cin,   output sum, output cout );
+
+assign sum=a^b^cin;
+assign cout=a&b|b&cin|cin&a;
+
+endmodule
