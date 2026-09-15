@@ -1,11 +1,8 @@
 module top_module (
-    input clk,    
-    input d,
-    output reg q );
-
-   
+    input clk,
+    input in, 
+    output out);
     always @(posedge clk)begin 
-    q<=d;
+    out<=in^out;
     end
-
 endmodule
